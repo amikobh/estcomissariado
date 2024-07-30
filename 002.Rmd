@@ -1,0 +1,29 @@
+# Total de atendimentos realizados
+\leavevmode
+\newline
+No período em análise, conforme expresso na tabela que segue, o Comissariado Infracional atendeu `r sum(TOTAL_ATENDIMENTOS_COM_bkp$QUANTIDADE)` casos relacionados diretamente às decisões tomadas nas audiências de atendimento aos adolescentes.
+
+\leavevmode
+\newline
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[1,].png')
+```
+
+\newpage
+
+## Atendimento às audiências
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[2,].png')
+```
+
+\leavevmode
+\newline 
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[1,].png')
+```
+
+\newpage

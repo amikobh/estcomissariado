@@ -1,0 +1,30 @@
+
+## Encaminhamento Justiça Restaurativa
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[13,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[12,].png')
+```
+
+\newpage
+
+## Encaminhamento CEDIPRO
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[14,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[13,].png')
+```
+
+\newpage

@@ -1,0 +1,29 @@
+## Relatórios produzidos
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[33,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[32,].png')
+```
+
+\newpage
+
+## Ofícios produzidos
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[34,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[33,].png')
+```
+
+\newpage

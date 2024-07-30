@@ -1,0 +1,30 @@
+
+## Atendimento testemunhas
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[5,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[4,].png')
+```
+
+\newpage
+
+## Encaminhamento NAMSEP
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[6,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[5,].png')
+```
+
+\newpage

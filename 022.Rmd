@@ -1,0 +1,31 @@
+
+## Reuniões realizadas
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[37,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[36,].png')
+```
+
+\newpage
+
+
+## Coleta remota de informação
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[38,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[37,].png')
+```
+
+\newpage

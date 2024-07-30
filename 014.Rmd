@@ -1,0 +1,29 @@
+## Fiscalização em unidades socioeducativas nos finais de semana e feriado
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='50%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[23,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='50%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[22,].png')
+```
+
+\newpage
+
+## Fiscalização ordinária programas de meio aberto
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='55%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/TABELA[24,].png')
+```
+
+\leavevmode
+\newline
+```{r echo=FALSE, out.width='60%', fig.align='center', dpi=1024, }
+knitr::include_graphics('imagens/GRAFICO[23,].png')
+```
+
+\newpage
