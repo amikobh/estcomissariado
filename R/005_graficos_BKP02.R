@@ -1142,7 +1142,30 @@ ggplot(banco_REUNIAO_REALIZADA_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)
 ggsave("GRAFICO[36,].png", width=10, height=8, pointsize=12, dpi = 512)
 #########################################################################################################
 #########################################################################################################
+SINAL <- paste((banco_COLETA_REMOTA_bkp$PERCENTUAL), "%")#para plotar o sinal de porcentagem
+#pdf(file="grafico_banco_incidencia_bkp_alternativo.pdf", title = "grafico_banco_incidencia_bkp", width = 10, height = 8)
+setwd(file.path("~/diretorio_r/estcomissariado/imagens"))
+#salvar png
+library(forcats)
 
+banco_COLETA_REMOTA_bkp =
+  banco_COLETA_REMOTA_bkp |>
+  mutate(DIA_UTIL_OU_PLANTAO = fct_reorder(DIA_UTIL_OU_PLANTAO, QUANTIDADE))
+
+ggplot(banco_COLETA_REMOTA_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) +
+  geom_bar(stat = "identity", fill="#bb1e23") +
+  coord_flip() +
+  labs(title = (str_c(GRAFICO[37,],": Coleta remota de informação, ", "01/01/24 a 30/06/24")),
+       #subtitle = "Adolescentes por Atos Infracionais",
+       caption = "FONTE: VARA INFRACIONAL DA INFÂNCIA E DA JUVENTUDE DE BELO HORIZONTE",
+       x = "", y = "")  +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold", size = 12),
+        plot.subtitle = element_text(hjust = 0.5, size = 12),
+        plot.caption =element_text(hjust = 0.5, size = 12)  ) +
+  geom_text(aes(label = SINAL), hjust = 0, nudge_x = 0.05, colour= "#bb1e23", size = 3) +
+  #scale_y_continuous(n.breaks=5)
+  scale_y_continuous(limits=c(0, 100))
+ggsave("GRAFICO[37,].png", width=10, height=8, pointsize=12, dpi = 512)
 #########################################################################################################
 #########################################################################################################
 SINAL <- paste((banco_ZAP_RECEBIDO_bkp$PERCENTUAL), "%")#para plotar o sinal de porcentagem
@@ -1158,7 +1181,7 @@ banco_ZAP_RECEBIDO_bkp =
 ggplot(banco_ZAP_RECEBIDO_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) +
   geom_bar(stat = "identity", fill="#bb1e23") +
   coord_flip() +
-  labs(title = (str_c(GRAFICO[37,],": Mensagens (whatsapp - ligações) recebidas de unidades socioeducativas, ", "01/01/24 a 30/06/24")),
+  labs(title = (str_c(GRAFICO[38,],": Mensagens (whatsapp - ligações) recebidas de unidades socioeducativas, ", "01/01/24 a 30/06/24")),
        #subtitle = "Adolescentes por Atos Infracionais",
        caption = "FONTE: VARA INFRACIONAL DA INFÂNCIA E DA JUVENTUDE DE BELO HORIZONTE",
        x = "", y = "")  +
@@ -1168,7 +1191,7 @@ ggplot(banco_ZAP_RECEBIDO_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) +
   geom_text(aes(label = SINAL), hjust = 0, nudge_x = 0.05, colour= "#bb1e23", size = 3) +
   #scale_y_continuous(n.breaks=5)
   scale_y_continuous(limits=c(0, 530))
-ggsave("GRAFICO[37,].png", width=10, height=8, pointsize=12, dpi = 512)
+ggsave("GRAFICO[38,].png", width=10, height=8, pointsize=12, dpi = 512)
 #########################################################################################################
 #########################################################################################################
 
@@ -1187,7 +1210,7 @@ banco_ZAP_ENCAMINHADO_bkp =
 ggplot(banco_ZAP_ENCAMINHADO_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) +
   geom_bar(stat = "identity", fill="#bb1e23") +
   coord_flip() +
-  labs(title = (str_c(GRAFICO[38,],": Mensagens (whatsapp - ligações) encaminhadas para unidades socioeducativas, ", "01/01/24 a 30/06/24")),
+  labs(title = (str_c(GRAFICO[39,],": Mensagens (whatsapp - ligações) encaminhadas para unidades socioeducativas, ", "01/01/24 a 30/06/24")),
        #subtitle = "Adolescentes por Atos Infracionais",
        caption = "FONTE: VARA INFRACIONAL DA INFÂNCIA E DA JUVENTUDE DE BELO HORIZONTE",
        x = "", y = "")  +
@@ -1197,7 +1220,7 @@ ggplot(banco_ZAP_ENCAMINHADO_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) 
   geom_text(aes(label = SINAL), hjust = 0, nudge_x = 0.05, colour= "#bb1e23", size = 3) +
   #scale_y_continuous(n.breaks=5)
   scale_y_continuous(limits=c(0, 660))
-ggsave("GRAFICO[38,].png", width=10, height=8, pointsize=12, dpi = 512)
+ggsave("GRAFICO[39,].png", width=10, height=8, pointsize=12, dpi = 512)
 #########################################################################################################
 #########################################################################################################
 
@@ -1216,7 +1239,7 @@ banco_OUTRAS_DEMANDAS_bkp =
 ggplot(banco_OUTRAS_DEMANDAS_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) +
   geom_bar(stat = "identity", fill="#bb1e23") +
   coord_flip() +
-  labs(title = (str_c(GRAFICO[39,],": Outras demandas, ", "01/01/24 a 30/06/24")),
+  labs(title = (str_c(GRAFICO[40,],": Outras demandas, ", "01/01/24 a 30/06/24")),
        #subtitle = "Adolescentes por Atos Infracionais",
        caption = "FONTE: VARA INFRACIONAL DA INFÂNCIA E DA JUVENTUDE DE BELO HORIZONTE",
        x = "", y = "")  +
@@ -1226,7 +1249,7 @@ ggplot(banco_OUTRAS_DEMANDAS_bkp, aes(x = DIA_UTIL_OU_PLANTAO, y = QUANTIDADE)) 
   geom_text(aes(label = SINAL), hjust = 0, nudge_x = 0.05, colour= "#bb1e23", size = 3) +
   #scale_y_continuous(n.breaks=5)
   scale_y_continuous(limits=c(0, 180))
-ggsave("GRAFICO[39,].png", width=10, height=8, pointsize=12, dpi = 512)
+ggsave("GRAFICO[40,].png", width=10, height=8, pointsize=12, dpi = 512)
 #########################################################################################################
 #########################################################################################################
 
